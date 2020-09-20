@@ -86,8 +86,9 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 0.625em;
-	display: inline;
+	padding: 0.5em 0.625em;
+	list-style: none;
+	/* display: inline; removed for responsiveness */
 }
 header nav ul li a{
 	text-decoration: none;
@@ -95,9 +96,6 @@ header nav ul li a{
 }
 
 
-nav {
-	display: flex;
-	flex-flow: wrap;
 }
 
 /*The widths are in a percentage!*/
@@ -200,4 +198,55 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/* For Mobile Devices */
+@media all and (max-width: 600px) {
+	.section-one, .section-two, .section-three {
+		width: 100%;
+		flex-flow: row wrap;
+	}
+
+	h3 {
+		font-size: 0.8em;
+	}
+
+
+	.section-two, .section-three {
+		border: none;
+	}
+
+	div .section-one {
+		padding-left: 1.7em;
+		font-size: 0.9em;
+	}
+
+	header h1 {
+		padding-bottom: 0;
+	}
+}
+
+
+/* For Tablets */
+@media all and (min-width: 768px) {
+	header {
+		width: 100%;
+	}
+
+	header nav ul li {
+		margin-bottom: 1em;
+	}
+
+	header nav ul {
+		display: inline-flex;
+	}
+}
+
+
+/* For Desktops */
+@media all and (min-width: 1200px) {
+	header {
+		flex-direction: row;
+    		justify-content: space-between;
+	}
 }
