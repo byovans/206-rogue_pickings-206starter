@@ -246,6 +246,7 @@ footer span {
 /* For Desktops */
 @media all and (min-width: 1200px) {
 	header {
+		display: flex;
 		flex-direction: row;
     		justify-content: space-between;
 	}
