@@ -207,6 +207,11 @@ footer span {
 		flex-flow: row wrap;
 	}
 
+
+	header h1 {
+		display: contents;
+	}
+
 	h3 {
 		font-size: 0.8em;
 	}
@@ -243,8 +248,24 @@ footer span {
 }
 
 
+@media all and (max-width: 1200px) {
+	header {
+		width: 100%;
+		
+	}
+
+	header nav {
+		border-top: 0.1875em solid #77a466; 
+		padding-bottom: 1em;
+		width: 100%;
+		margin-top: 2em;
+		
+	}
+}
+
+
 /* For Desktops */
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1201px) {
 	header {
 		display: flex;
 		flex-direction: row;
